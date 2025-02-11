@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#outer {
+    position: relative;
+    width: 60%;
+    margin: 10px auto;
+    background-color: darkgrey;
+    overflow: overlay;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#splash {
+    width: 40%;
+    height: auto;
+    display: block;
+}
+#icono2 {
+    width: 23%;
+    height: auto;
+    display: block; 
+    
+}
+#icono1 {
+    width: 23%;
+    height: auto;
+    display: block; 
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.TituloWeb {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: lightslategray;
+}
+
+
+
+#imgdiseno {
+    width: 75%;
+    display: block;
+}
+
+.definition-text {
+    display: none;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    text-align: center;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 280px; /* Slightly less than parent height to ensure padding */
+}
+
+
+.divAside {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header p {
+    color: white;
+}
+
+#principalcontent {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    display: inline-block; /* Alinear el main en línea */
+}
+
+
+
+/* Remove the inline-block from principalcontent and restore flex */
+#principalcontent {
+    display: flex;
+    gap: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+/* Remove inline-block from contentAside */
+#contentAside {
+    background-color: cadetblue;
+    margin: 10px;
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+/* Update secondarycontent to not affect layout flow */
+#secondarycontent {
+    flex: 0 0 auto; /* Don't grow or shrink, use auto basis */
+}
+
+/* Update prymarycontent styles */
+#prymarycontent {
+    flex: 1;
+    background-color: cadetblue;
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+}
+
+
+#prymarycontent {
+    padding: 20px;
+}
+
+.post {
+    margin-bottom: 30px;
+}
+
+.feature-card {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1;
+    width: 330px;
+    height: 130px;
+    margin: 5px 5px 5px 5px;
+}
+
+#titulofeature {
+    font-size: 16px;
+}
+
+.feature-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.overlay-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-card:hover .overlay-info {
+    opacity: 1;
+}
+
+.feature-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#footer {
+    border-top: double;
+    clear: both;
+    height: 66px;
+    text-align: center;
+    color: white;
+    background-color: cadetblue;
+}
+
+.container-fluid {
+    background-color: grey;
+}
+
+.navbar .nav-link {
+    color: white; /* Cambia a tu color preferido */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color:royalblue; /* Cambia a tu color preferido */
+}
+
+.container-fluid.mt-4 {
+    background-color: transparent;
+    padding: 20px;
+    clear: both;
+}
+
+.container-fluid.mt-4 .feature-card {
+    height: 200px;
+    width: 100%;
+}
+
+.container-fluid.mt-4 .feature-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#footer {
+    clear: both;
+    background-color: grey;
+    padding: 10px;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer-item {
+    flex: 1;
+    background-color: grey;
+    padding: 8px;
+    margin: 0 5px;
+    color: white;
+}
+

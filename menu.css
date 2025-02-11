@@ -1,0 +1,35 @@
+#menu {
+    display: flex;
+    height: auto;
+    margin-bottom: 10px;
+    background-color:grey;
+}
+
+#menu .principal {
+    float: left;
+    color: white;
+    border-right: 1px solid white;
+    text-decoration: none;
+    text-align:  center;
+    padding: 10px 25px 10px 25px;
+}
+
+#menu .last {
+
+    border-right: 0px;
+}
+
+#container a:hover {
+background: lightskyblue;
+font-size: larger;
+font-weight: bold;
+}
+
+#date {
+    line-height: 38px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: -1px;
+    float: right;
+}
